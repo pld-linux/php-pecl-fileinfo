@@ -26,7 +26,7 @@ This extension allows retrieval of information regarding vast majority
 of file. This information may include dimensions, quality, length
 etc...
 
-Additionally it can also be used to retrieve the mime type for a
+Additionally it can also be used to retrieve the MIME type for a
 particular file and for text files proper language encoding.
 
 In PECL status of this extension is: %{_status}.
@@ -36,7 +36,7 @@ To rozszerzeie pozwala na uzyskanie wielu informacji na temat plików.
 Informacje te uwzglêdniaj± miêdzy innymi rozmiar, jako¶æ, d³ugo¶æ,
 itp.
 
-Dodatkowo mo¿e byæ u¿yte do uzyskania typu mime danego pliku, a dla
+Dodatkowo mo¿e byæ u¿yte do uzyskania typu MIME danego pliku, a dla
 plików tekstowych u¿ytego kodowania.
 
 To rozszerzenie ma w PECL status: %{_status}.
