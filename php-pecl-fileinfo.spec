@@ -32,7 +32,7 @@ particular file and for text files proper language encoding.
 In PECL status of this extension is: %{_status}.
 
 %description -l pl
-To rozszerzeie pozwala na uzyskanie wielu informacji na temat plików.
+To rozszerzenie pozwala na uzyskanie wielu informacji na temat plików.
 Informacje te uwzglêdniaj± miêdzy innymi rozmiar, jako¶æ, d³ugo¶æ,
 itp.
 
