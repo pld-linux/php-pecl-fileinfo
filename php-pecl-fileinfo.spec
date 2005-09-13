@@ -12,7 +12,6 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_smodname}-%{version}.tgz
 # Source0-md5:	e228172c2486c4866c1242d752bae54d
 URL:		http://pecl.php.net/package/Fileinfo/
-BuildRequires:	libtool
 BuildRequires:	php-devel >= 3:5.0.0
 Requires:	php-common
 Obsoletes:	php-pear-%{_modname}
