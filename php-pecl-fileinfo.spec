@@ -1,19 +1,18 @@
-# TODO:
-# - doesn't build
 %define		_modname	fileinfo
 %define		_smodname	Fileinfo
 %define		_status		beta
 %define		_sysconfdir	/etc/php
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
+
 Summary:	%{_modname} - libmagic bindings
 Summary(pl):	%{_modname} - dowi±zania biblioteki libmagic
 Name:		php-pecl-%{_modname}
-Version:	0.2
-Release:	0.1
+Version:	1.0
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_smodname}-%{version}.tgz
-# Source0-md5:	e228172c2486c4866c1242d752bae54d
+# Source0-md5:	66503ab12c7d9cc1958b653845baa49c
 URL:		http://pecl.php.net/package/Fileinfo/
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.254
@@ -43,7 +42,7 @@ plików tekstowych u¿ytego kodowania.
 To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
-%setup -q -c -n php-pear-%{_smodname}
+%setup -q -c 
 
 %build
 cd %{_smodname}-%{version}
@@ -76,6 +75,6 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc %{_smodname}-%{version}/{CREDITS,EXPERIMENTAL}
+%doc %{_smodname}-%{version}/{CREDITS,EXPERIMENTAL,fileinfo.php}
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/conf.d/%{_modname}.ini
 %attr(755,root,root) %{extensionsdir}/%{_modname}.so
