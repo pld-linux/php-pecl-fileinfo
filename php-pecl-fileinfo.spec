@@ -8,7 +8,7 @@ Summary:	%{_modname} - libmagic bindings
 Summary(pl):	%{_modname} - dowi±zania biblioteki libmagic
 Name:		php-pecl-%{_modname}
 Version:	1.0
-Release:	1
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_smodname}-%{version}.tgz
@@ -33,8 +33,7 @@ In PECL status of this extension is: %{_status}.
 
 %description -l pl
 To rozszerzenie pozwala na uzyskanie wielu informacji na temat plików.
-Informacje te uwzglêdniaj± miêdzy innymi rozmiar, jako¶æ, d³ugo¶æ
-itp.
+Informacje te uwzglêdniaj± miêdzy innymi rozmiar, jako¶æ, d³ugo¶æ itp.
 
 Dodatkowo mo¿e byæ u¿yte do uzyskania typu MIME danego pliku, a dla
 plików tekstowych - u¿ytego kodowania.
@@ -42,7 +41,7 @@ plików tekstowych - u¿ytego kodowania.
 To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
-%setup -q -c 
+%setup -q -c
 
 %build
 cd %{_smodname}-%{version}
