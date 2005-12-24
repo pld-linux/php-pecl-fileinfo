@@ -7,12 +7,13 @@
 Summary:	%{_modname} - libmagic bindings
 Summary(pl):	%{_modname} - dowi±zania biblioteki libmagic
 Name:		php-pecl-%{_modname}
-Version:	1.0
-Release:	2
+Version:	1.0.1
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_smodname}-%{version}.tgz
-# Source0-md5:	66503ab12c7d9cc1958b653845baa49c
+# Source0-md5:	34155e8ea7e5b46d7a155e73245f3796
+Patch0:		%{name}-php51.patch
 URL:		http://pecl.php.net/package/Fileinfo/
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.254
@@ -42,6 +43,7 @@ To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %build
 cd %{_smodname}-%{version}
