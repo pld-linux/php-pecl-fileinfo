@@ -5,7 +5,7 @@ Summary:	%{_modname} - libmagic bindings
 Summary(pl.UTF-8):	%{_modname} - dowiązania biblioteki libmagic
 Name:		php-pecl-%{_modname}
 Version:	1.0.4
-Release:	3
+Release:	4
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_smodname}-%{version}.tgz
@@ -15,6 +15,7 @@ URL:		http://pecl.php.net/package/Fileinfo/
 BuildRequires:	libmagic-devel
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.344
+Provides:	php(fileinfo)
 %{?requires_php_extension}
 Requires:	php-common >= 4:5.0.4
 Obsoletes:	php-pear-%{_modname}
