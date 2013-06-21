@@ -1,9 +1,10 @@
+%define		php_name	php%{?php_suffix}
 %define		modname	fileinfo
 %define		smodname	Fileinfo
 %define		status		beta
 Summary:	%{modname} - libmagic bindings
 Summary(pl.UTF-8):	%{modname} - dowiązania biblioteki libmagic
-Name:		php-pecl-%{modname}
+Name:		%{php_name}-pecl-%{modname}
 Version:	1.0.4
 Release:	8
 License:	PHP
@@ -12,9 +13,9 @@ Source0:	http://pecl.php.net/get/%{smodname}-%{version}.tgz
 # Source0-md5:	2854e749db157365c769cb9496f5586f
 Patch0:		pecl-fileinfo-defaultdb.patch
 URL:		http://pecl.php.net/package/Fileinfo/
+BuildRequires:	%{php_name}-devel >= 4:5.0.4
 BuildRequires:	libmagic-devel
-BuildRequires:	php-devel >= 4:5.0.4
-BuildRequires:	rpmbuild(macros) >= 1.344
+BuildRequires:	rpmbuild(macros) >= 1.650
 Provides:	php(fileinfo)
 %{?requires_php_extension}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
